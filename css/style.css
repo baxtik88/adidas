@@ -1,4 +1,6 @@
 @import url(./fonts.css);
+@import url(./media.css);
+
 
 * {
     margin: 0;
@@ -11,12 +13,23 @@
 .header {
     padding: 0 30px;
 }
+.container {
+    max-width: 1440px ;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto; 
+}
 
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+}
+.logo__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .menu {
@@ -25,7 +38,7 @@
 
 .menu__list {
     padding: 38px 20px;
-    border-top: 2px solid transparent;
+    /* border-top: 2px solid transparent; */
     border-bottom: 2px solid transparent;
     transition: 0.3s;
 }
@@ -80,6 +93,7 @@
     color: white;
 }
 
+
 h1 {
     font-family: 'SemiBold', sans-serif;
     font-size: 59px;
@@ -96,15 +110,10 @@ h1 {
     text-transform: uppercase;
 }
 
-
-
-
 .cards__wrap {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
 .card {
@@ -112,7 +121,6 @@ h1 {
     background: #181D28;
     padding: 20px 0;
 }
-
 .card__body {
     display: flex;
     flex-direction: column;
@@ -152,17 +160,19 @@ h1 {
     text-align: center;
 
 }
+
 .desc__p {
-font-family: 'Regular', sans-serif;
-font-size: 15px;
-line-height: 18px;
-margin: 20px 0;
+    font-family: 'Regular', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 20px 0;
 
 }
+
 .ad__img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .sneakers__h {
@@ -181,27 +191,30 @@ margin: 20px 0;
     flex-wrap: wrap;
     gap: 14px 0;
     margin-bottom: 40px;
-    
+
 }
+
 .list__item {
     flex-basis: 20%;
 }
+
 .list__link {
-font-family: 'Regular';
-font-size: 15px;
-font-weight: 400;
-line-height: 18px;
-color: black;
+    font-family: 'Regular';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    color: black;
 }
-    
+
 .footer {
-    background:  #181D28;
+    background: #181D28;
     padding: 35px;
 }
+
 .footer__wrap {
-display: flex;
-justify-content: space-between;
-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -209,13 +222,15 @@ align-items: center;
     display: flex;
     align-items: center;
     gap: 30px;
-    
+
 }
- .footer__link {
+
+.footer__link {
     font-family: 'Regular';
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
     color: white;
- }
+}
+
