@@ -3,4 +3,42 @@
         flex-direction: column;
         margin-bottom: 10px;
     }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .devis {
+        font-size: 18px;
+    }
+
+    .banner__img {
+        width: 200px;
+    }
+
+    .cards__wrap {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+    }
+}
+@media screen and (max-width:422px) {
+    .footer__wrap {
+        flex-direction: column;
+        gap:5px;
+    }
+}
+
+@media screen and (max-width:365px) {
+    .search__text {
+        padding: 6px 9px;
+        border-radius: 5px 0px 0px 5px;
+
+    }
+
+    .search__btn {
+        padding: 6px 11px;
+        border-radius: 0px 5px 5px 0px;
+    }
 }
